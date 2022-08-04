@@ -1,0 +1,39 @@
+.nav-icon{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+    cursor: pointer;
+
+    &:hover{
+        background-color: var(--grey-light-3);
+    }
+
+    &__icon{
+        font-size: 3rem;
+        color: var(--grey-dark-2)
+    }
+
+    &__img{
+        border-radius: 50%;
+        height: 100%;
+        aspect-ratio: 1;
+        margin-right: 1rem;
+
+    }
+
+    &__badge{
+        position: absolute;
+        top: .5rem;
+        right: .3rem;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        background-color: var(--primary-light);
+        color: white;
+        font-size: 1.3rem;
+        width: 1.7rem;
+        aspect-ratio: 1;
+    }
+}

@@ -1,0 +1,28 @@
+@mixin center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin high-resolution{
+    @media (min-resolution: 192dpi) and (min-width: 900px),
+    (-webkit-min-device-pixel-ratio: 2) and (min-width: 900px),
+    (min-width: 1800px){
+       @content;   
+    }
+}
+
+$screen-sizes: (
+    "phone": 600px,
+     "tab-port": 900px,
+     "tab-land": 1200px,
+    );
+
+@mixin respond($size){
+    @if $size == desktop {
+        @media (min-width: 1800px){@content}
+    } @else {
+        @media (max-width: map-get($screen-sizes, $size)){@content}
+    }
+}

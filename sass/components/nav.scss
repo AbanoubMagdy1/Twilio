@@ -1,0 +1,17 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7rem;
+    background-color: white;
+
+    &__img{
+        height: 80%;
+        padding-left: 1rem;
+    }
+
+    &__icons{
+        display: flex;
+        height: 100%;
+    }
+}

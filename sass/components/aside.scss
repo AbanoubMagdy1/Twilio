@@ -1,0 +1,44 @@
+.aside{
+    background: var(--grey-dark-2);
+    width: 20rem;
+    max-width: 33%;
+
+    &__menu{
+        margin: 5rem 0;
+        width: 100%;
+
+        li{      
+            padding: 2rem 1rem;
+            margin-bottom: .7rem;
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+
+            a{
+                color: white;
+                position: relative;
+                z-index: 100;
+                text-transform: uppercase;
+            }
+
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 2%;
+                height: 100%;
+                transform: scaleY(0);
+                background: var(--primary-light);
+                transform-origin: center;
+                transition: transform .2s, width .5s .3s; 
+            }
+
+            &:hover::before{
+                transition: transform .2s, width .5s .3s; 
+                transform: scaleY(1);
+                width: 100%;
+            }
+        }
+    }
+}
