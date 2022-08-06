@@ -1,7 +1,6 @@
 .aside{
-    background: var(--grey-dark-2);
-    width: 20rem;
-    max-width: 33%;
+    background: var(--grey-dark-1);
+    width: var(--aside-width);
 
     &__menu{
         margin: 5rem 0;
@@ -13,6 +12,7 @@
             text-align: center;
             cursor: pointer;
             position: relative;
+            font-size: 1.4rem;
 
             a{
                 color: white;
@@ -35,7 +35,13 @@
             }
 
             &:hover::before{
-                transition: transform .2s, width .5s .3s; 
+                transform: scaleY(1);
+                width: 100%;
+            }
+
+            &.active::before{
+                cursor: default;
+                transition: none; 
                 transform: scaleY(1);
                 width: 100%;
             }

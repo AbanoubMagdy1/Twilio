@@ -13,6 +13,8 @@
     --grey-dark-1: #333;
     --grey-dark-2: #777;
     --grey-dark-3: #999;
+
+    --aside-width: min(27%, 20rem);
 }
 
 *,*::before, *::after{
@@ -41,7 +43,7 @@ body{
 
 .main-container{
     background-color: #ddd;
-    width: 90rem;
+    width: 120rem;
     min-height: 30rem;
     max-width: 100%;
     margin: 10rem auto;
@@ -52,6 +54,10 @@ body{
 .body{
     display: flex;
     align-items: stretch;
+}
+
+main{
+    max-width: calc(100% - var(--aside-width));
 }
 
 a{
