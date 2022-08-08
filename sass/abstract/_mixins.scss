@@ -5,6 +5,13 @@
     transform: translate(-50%, -50%);
 }
 
+@mixin white-box($padding: 1rem){
+    background-color: white;
+    padding: $padding;
+    border-radius: 5px;
+    box-shadow: 1.5rem 1.5rem 4rem rgba(0, 0, 0, .1);
+}
+
 @mixin high-resolution{
     @media (min-resolution: 192dpi) and (min-width: 900px),
     (-webkit-min-device-pixel-ratio: 2) and (min-width: 900px),

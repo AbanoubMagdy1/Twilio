@@ -1,0 +1,61 @@
+.features{
+    --spacing: 3rem;
+    @include white-box(3rem);
+    flex: 1 0 60%;
+    max-width: 60rem;
+
+    .text-secondary{
+        &:not(:last-of-type){
+            margin-bottom: 2rem;
+        }
+
+        &:last-of-type{
+            margin-bottom: var(--spacing);
+        }
+    }
+
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        margin-block: var(--spacing);
+        font-size: 2rem;
+        
+
+        li{
+            flex: 1 1 40%;
+
+            &:not(:last-of-type){
+                margin-bottom: .6rem;
+            }
+
+            &:nth-child(odd){
+                margin-right: .7rem;
+            }
+        }
+    }
+
+    &__recommend{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        margin-top: var(--spacing);
+
+        p{
+            font-size: 2.2rem;
+            margin-right: 1.4rem;
+            text-align: center;
+        }
+
+        .recommend_users{
+            display: flex;
+
+            img{
+                border-radius: 50%;
+                width: 6rem;
+                margin-right: -2rem;
+                border: 5px solid white;
+            }
+        }
+    }
+}

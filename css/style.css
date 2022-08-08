@@ -51,6 +51,13 @@ main {
   max-width: calc(100% - var(--aside-width));
 }
 
+.details {
+  display: flex;
+  margin: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -58,6 +65,10 @@ a {
 
 ul {
   list-style: none;
+}
+
+hr {
+  color: var(--grey-dark-2);
 }
 
 .text-primary {
@@ -68,6 +79,12 @@ ul {
   letter-spacing: 3px;
   margin: 1rem 2rem;
   margin-left: 3rem;
+}
+
+.text-secondary {
+  font-size: 1.7rem;
+  color: black;
+  letter-spacing: 1px;
 }
 
 .nav {
@@ -231,6 +248,57 @@ ul {
 }
 .overview__rating .rating {
   font-size: 3rem;
+}
+.features {
+  --spacing: 3rem;
+  background-color: white;
+  padding: 3rem;
+  border-radius: 5px;
+  box-shadow: 1.5rem 1.5rem 4rem rgba(0, 0, 0, 0.1);
+  flex: 1 0 60%;
+  max-width: 60rem;
+}
+.features .text-secondary:not(:last-of-type) {
+  margin-bottom: 2rem;
+}
+.features .text-secondary:last-of-type {
+  margin-bottom: var(--spacing);
+}
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-block: var(--spacing);
+  font-size: 2rem;
+}
+.features__list li {
+  flex: 1 1 40%;
+}
+.features__list li:not(:last-of-type) {
+  margin-bottom: 0.6rem;
+}
+.features__list li:nth-child(odd) {
+  margin-right: 0.7rem;
+}
+.features__recommend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-top: var(--spacing);
+}
+.features__recommend p {
+  font-size: 2.2rem;
+  margin-right: 1.4rem;
+  text-align: center;
+}
+.features__recommend .recommend_users {
+  display: flex;
+}
+.features__recommend .recommend_users img {
+  border-radius: 50%;
+  width: 6rem;
+  margin-right: -2rem;
+  border: 5px solid white;
 }
 
 /*# sourceMappingURL=style.css.map */
