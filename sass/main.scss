@@ -2,9 +2,11 @@
 
 @import 'base/base';
 @import 'base/utils';
+@import 'base/typography';
 
 @import 'components/nav';
 @import 'components/aside';
 @import 'components/input';
 @import 'components/icon';
 @import 'components/photos';
+@import 'components/overview.scss';

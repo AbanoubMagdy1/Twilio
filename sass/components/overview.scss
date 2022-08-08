@@ -1,0 +1,40 @@
+.overview{
+    background: var(--grey-light-3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    >div{
+        display: flex;
+        align-items: center;
+    }
+    &__place{
+        cursor: pointer;
+        margin-right: 2rem;
+        color: var(--primary-dark);
+        transition: all .3s;
+        padding-bottom: .5rem;
+        border-bottom: 1px solid var(--primary-dark);
+
+        &:hover{
+            color: black;
+            border-bottom: 1px solid black;
+        }
+    }
+
+    &__rating{
+        background: var(--primary);
+        height: 100%;
+        color: white;
+        text-align: center;
+        font-weight: 300;
+        padding: 1rem;
+        .rating{
+            font-size: 3rem;
+        }
+
+        .votes{
+
+        }
+    }
+}
