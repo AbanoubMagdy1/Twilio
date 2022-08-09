@@ -1,8 +1,8 @@
 .features{
     --spacing: 3rem;
     @include white-box(3rem);
-    flex: 1 0 60%;
-    max-width: 60rem;
+    flex: 7 1 40rem;
+    max-width: 70rem;
 
     .text-secondary{
         &:not(:last-of-type){
@@ -18,15 +18,11 @@
         display: flex;
         flex-wrap: wrap;
         margin-block: var(--spacing);
-        font-size: 2rem;
+        font-size: 1.7rem;
+        row-gap: .6rem;
         
-
         li{
             flex: 1 1 40%;
-
-            &:not(:last-of-type){
-                margin-bottom: .6rem;
-            }
 
             &:nth-child(odd){
                 margin-right: .7rem;

@@ -1,0 +1,46 @@
+.booking{
+    flex: 1 0 100%;
+    text-align: center;
+    margin: 2rem auto;
+
+    &__text{
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 1.6rem;
+    }
+
+    &__btn{
+        --height: 8rem;
+        cursor: pointer;
+        font-size: 2.4rem;
+        border: none;
+        background-image: linear-gradient(to right, var(--primary-light), var(--primary-dark));
+        border-radius: 30px;
+        color: white;
+        text-transform: uppercase;
+        height: var(--height);
+        width: 14rem;
+        position: relative;
+        overflow: hidden;
+
+        .btn-body{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: calc(2 * var(--height));
+            transition: .3s transform;
+
+            .side{
+                height: var(--height);
+                display: grid;
+                place-items: center;
+            }
+        }
+
+        &:hover .btn-body{
+            transform: translateY(-50%);
+        }
+    }
+}

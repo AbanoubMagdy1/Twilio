@@ -82,9 +82,8 @@ hr {
 }
 
 .text-secondary {
-  font-size: 1.7rem;
-  color: black;
-  letter-spacing: 1px;
+  font-size: 1.8rem;
+  color: var(--grey-dark-1);
 }
 
 .nav {
@@ -255,8 +254,8 @@ hr {
   padding: 3rem;
   border-radius: 5px;
   box-shadow: 1.5rem 1.5rem 4rem rgba(0, 0, 0, 0.1);
-  flex: 1 0 60%;
-  max-width: 60rem;
+  flex: 7 1 40rem;
+  max-width: 70rem;
 }
 .features .text-secondary:not(:last-of-type) {
   margin-bottom: 2rem;
@@ -268,13 +267,11 @@ hr {
   display: flex;
   flex-wrap: wrap;
   margin-block: var(--spacing);
-  font-size: 2rem;
+  font-size: 1.7rem;
+  row-gap: 0.6rem;
 }
 .features__list li {
   flex: 1 1 40%;
-}
-.features__list li:not(:last-of-type) {
-  margin-bottom: 0.6rem;
 }
 .features__list li:nth-child(odd) {
   margin-right: 0.7rem;
@@ -299,6 +296,94 @@ hr {
   width: 6rem;
   margin-right: -2rem;
   border: 5px solid white;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 2 1 30rem;
+}
+.reviews .review {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 1.5rem 1.5rem 4rem rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.reviews .review__icon {
+  position: absolute;
+  top: -1.8rem;
+  left: 0;
+  color: var(--grey-light-4);
+  font-size: 10rem;
+  opacity: 0.4;
+}
+.reviews .review__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+.reviews .review__details img {
+  border-radius: 50%;
+  width: 8rem;
+}
+.reviews .review__details .info {
+  text-align: center;
+}
+.reviews .review__details .info h5 {
+  font-size: 2rem;
+}
+.reviews .review__details .info h6 {
+  font-size: 1.6rem;
+  color: var(--grey-dark-3);
+}
+.reviews .review__details .rating {
+  font-size: 4rem;
+  color: var(--primary);
+}
+
+.booking {
+  flex: 1 0 100%;
+  text-align: center;
+  margin: 2rem auto;
+}
+.booking__text {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1.6rem;
+}
+.booking__btn {
+  --height: 8rem;
+  cursor: pointer;
+  font-size: 2.4rem;
+  border: none;
+  background-image: linear-gradient(to right, var(--primary-light), var(--primary-dark));
+  border-radius: 30px;
+  color: white;
+  text-transform: uppercase;
+  height: var(--height);
+  width: 14rem;
+  position: relative;
+  overflow: hidden;
+}
+.booking__btn .btn-body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(2 * var(--height));
+  transition: 0.3s transform;
+}
+.booking__btn .btn-body .side {
+  height: var(--height);
+  display: grid;
+  place-items: center;
+}
+.booking__btn:hover .btn-body {
+  transform: translateY(-50%);
 }
 
 /*# sourceMappingURL=style.css.map */

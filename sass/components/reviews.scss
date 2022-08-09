@@ -1,0 +1,48 @@
+.reviews{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 2 1 30rem;
+
+    .review{
+        @include white-box(2rem);
+        position: relative;
+
+        &__icon{
+            position: absolute;
+            top: -1.8rem;
+            left: 0;
+            color: var(--grey-light-4);
+            font-size: 10rem;
+            opacity: .4;
+        }
+
+        &__details{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 2rem;
+            img{
+                border-radius: 50%;
+                width: 8rem;
+            }
+
+            .info{
+                text-align: center;
+                h5{
+                    font-size: 2rem;
+                }
+
+                h6{
+                    font-size: 1.6rem;
+                    color: var(--grey-dark-3);
+                }
+            }
+
+            .rating{
+                font-size: 4rem;
+                color: var(--primary);
+            }
+        }
+    }
+}
